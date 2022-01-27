@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body {
+ 
+  padding: 20px;
+  margin: 0;
+  background-image: url('../html-color-codes-color-tutorials-hero.jpg');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.active {
+  background-color: #0099FF;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+h1{
+  color: #0099FF;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 5px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (max-width:750px) {
+  #cards{
+    transform:translateX(-24px);
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+@media (max-width:568px) {
+ 
+  .table{
+    font-size: 12px;
+  }
+}
+@media (max-width:468px) {
+ 
+  .table{
+    font-size: 7px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
